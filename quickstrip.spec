@@ -3,13 +3,13 @@ Summary(pl):	Narzêdzie do usuwania informacji debuggera z obrazów j±dra dla proc
 Name:		quickstrip
 Version:	1.1
 Release:	6
-ExclusiveArch:	alpha
-Copyright:	distributable
+License:	distributable
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
 Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source0:	%{name}-%{version}.tar.gz
+ExclusiveArch:	alpha
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -17,6 +17,12 @@ The quickstrip utility strips symbolic debugging information from
 Linux/Alpha ECOFF binaries. The standard strip utility has occasional
 problems with ECOFF binaries (especially, for example, with kernel
 images), so quickstrip is used instead.
+
+%description -l pl
+Narzêdzie quickstrip usuwa informacje o symbolach dla debuggera z
+binariów Linux/Alpha ECOFF. Standadowe narzêdzie strip miewa problemy
+z binarkami ECOFF (zw³aszcza, na przyk³ad, obrazami kernela), wiêc
+zamiast tego u¿ywa siê quickstrip.
 
 %prep
 %setup -q
