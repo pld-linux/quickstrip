@@ -5,9 +5,6 @@ Version:	1.1
 Release:	6
 License:	distributable
 Group:		Development/Tools
-Group(de):	Entwicklung/Werkzeuge
-Group(fr):	Development/Outils
-Group(pl):	Programowanie/Narzêdzia
 Source0:	%{name}-%{version}.tar.gz
 ExclusiveArch:	alpha
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
