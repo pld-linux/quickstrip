@@ -6,7 +6,7 @@ ExclusiveArch: alpha
 Copyright: distributable
 Group: Development/Tools
 Source: quickstrip-1.1.tar.gz
-BuildRoot: /var/tmp/quickstrip-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The quickstrip utility strips symbolic debugging information from
