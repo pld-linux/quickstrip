@@ -18,13 +18,13 @@ images), so quickstrip is used instead.
 %setup -q
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/{bin,man/man1}
 
-make install
+%{__make} install
 install -m 755 -s quickstrip $RPM_BUILD_ROOT/usr/bin/quickstrip
 install -m 644 quickstrip.1 $RPM_BUILD_ROOT/usr/man/man1/quickstrip.1
 
