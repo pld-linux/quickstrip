@@ -1,5 +1,5 @@
 Summary:	An Alpha tool for removing debugging information from kernel images
-Summary(pl.UTF-8):   Narzędzie do usuwania informacji debuggera z obrazów jądra dla procesora Alpha
+Summary(pl.UTF-8):	Narzędzie do usuwania informacji debuggera z obrazów jądra dla procesora Alpha
 Name:		quickstrip
 Version:	1.1
 Release:	6
